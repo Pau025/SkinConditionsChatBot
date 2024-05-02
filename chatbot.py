@@ -62,6 +62,9 @@ clauses.append(expr("(Sintoma(x, Vesiculas) & Sintoma(x, Fiebre)) ==> Enfermo(x,
 clauses.append(expr("(Sintoma(x, Vesiculas) & Sintoma(x, DolorBoca)) ==> Enfermo(x, Herpes)"))
 clauses.append(expr("Sintoma(x, Vesiculas) ==> Enfermo(x, Herpes)"))
 
+clauses.append(expr("Enfermo(x, Herpes) ==> Tratamiento(x, Aciclovir)"))
+clauses.append(expr("Enfermo(x, Herpes) ==> Recomendar(x, Celibato)"))
+
 
 
 # Gabriela Lujan
